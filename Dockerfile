@@ -48,7 +48,7 @@ RUN set -ex ;\
     pyenv rehash ;\
     \
     # install pyenv-virtualenv
-    git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv \
+    git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv ;\
     \
     # remove build dependencies and any leftover apk cache
     apk del --no-cache --purge .build-deps ;
